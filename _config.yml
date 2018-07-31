@@ -3,3 +3,5 @@ theme: jekyll-theme-leap-day
 collections:
   docs:
     output: true
+
+baseurl: /resinsight-system-doc
