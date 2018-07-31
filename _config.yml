@@ -1,1 +1,5 @@
 theme: jekyll-theme-leap-day
+
+collections:
+  docs:
+    output: true
