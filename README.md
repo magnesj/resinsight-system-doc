@@ -33,6 +33,15 @@ You can use the [editor on GitHub](https://github.com/magnesj/resinsight-system-
   {% endfor %}
 </ul>
 
+# items in pages ise baseurl folder
+<ul>
+  {% for post in site.pages %}
+    <li>
+      <a href="{{ post.path | prepend:site.baseurl }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 # items in docs collection
 <ul>
   {% for post in docs %}
