@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: CARFIN Export
-permalink: /docs/carfinexport/
 published: true
 ---
 
