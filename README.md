@@ -28,7 +28,6 @@ You can use the [editor on GitHub](https://github.com/magnesj/resinsight-system-
   {% for post in site.pages %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <a href="{{{ site.baseurl }}/{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
@@ -37,7 +36,7 @@ You can use the [editor on GitHub](https://github.com/magnesj/resinsight-system-
 <ul>
   {% for post in site.pages %}
     <li>
-      <a href="{{ post.path | prepend:site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
