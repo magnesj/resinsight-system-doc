@@ -1,6 +1,6 @@
 ---
 title: Pointer Field msj
-permalink: /cellresults/
+permalink: /docs/pointer-field
 ---
 
 # Pointer Field
