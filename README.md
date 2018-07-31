@@ -4,6 +4,13 @@ You can use the [editor on GitHub](https://github.com/magnesj/resinsight-system-
 
 [test](test)
 
+<ul>
+  {% for post in site.docs %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 ### Markdown
 
