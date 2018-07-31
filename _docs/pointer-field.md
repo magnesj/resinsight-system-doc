@@ -1,7 +1,5 @@
 ---
-layout: docs
 title: Pointer Field
-published: true
 ---
 
 # Pointer Field
