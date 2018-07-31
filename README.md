@@ -23,5 +23,10 @@ You can use the [editor on GitHub](https://github.com/magnesj/resinsight-system-
 </ul>
 
 
+# items in pages folder
+{% for page in site.pages %}            
+    {{ page.url | split:'/' | join:'+'}}
+{% endfor %}
+
 [test](test)
 
