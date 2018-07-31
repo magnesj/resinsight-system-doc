@@ -1,5 +1,6 @@
 ---
 title: Pointer Field msj
+permalink: /docs/cellresults/
 ---
 
 # Pointer Field
