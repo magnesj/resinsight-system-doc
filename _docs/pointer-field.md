@@ -29,3 +29,4 @@ QList<caf::PdmOptionItemInfo> RimWellPathGeometryDef::calculateValueOptions(cons
     return options;
 }
 ```
+
