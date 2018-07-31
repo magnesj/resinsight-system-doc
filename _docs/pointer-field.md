@@ -1,6 +1,6 @@
 ---
 title: Pointer Field msj
-permalink: /docs/pointer-field
+permalink: /pointer-field
 ---
 
 # Pointer Field
