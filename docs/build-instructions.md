@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Build Instructions
-permalink: /docs/buildinstructions/
 published: true
 ---
 
