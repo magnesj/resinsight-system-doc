@@ -32,5 +32,14 @@ You can use the [editor on GitHub](https://github.com/magnesj/resinsight-system-
   {% endfor %}
 </ul>
 
+# items in docs collection
+<ul>
+  {% for post in docs %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 [test](test)
 
