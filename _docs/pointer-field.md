@@ -1,6 +1,7 @@
 ---
 title: Pointer Field msj
 permalink: /pointer-field
+layout: default
 ---
 
 # Pointer Field
