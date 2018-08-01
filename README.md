@@ -6,7 +6,7 @@ Themes are located at [https://github.com/pages-themes](https://github.com/pages
 
 [Introduction to layouts](https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-layouts/)
 
-# items in docs folder
+### items in docs folder
 <ul>
   {% for page in site.docs %}
     <li>
@@ -15,7 +15,7 @@ Themes are located at [https://github.com/pages-themes](https://github.com/pages
   {% endfor %}
 </ul>
 
-# items in posts folder
+### items in posts folder
 <ul>
   {% for post in site.posts %}
     <li>
@@ -24,7 +24,7 @@ Themes are located at [https://github.com/pages-themes](https://github.com/pages
   {% endfor %}
 </ul>
 
-# items in pages using baseurl
+### items in pages using baseurl
 <ul>
   {% for page in site.pages %}
     <li>
@@ -33,7 +33,7 @@ Themes are located at [https://github.com/pages-themes](https://github.com/pages
   {% endfor %}
 </ul>
 
-# items in docs collection
+### items in docs collection
 <ul>
   {% for post in docs %}
     <li>
