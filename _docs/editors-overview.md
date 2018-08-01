@@ -1,6 +1,7 @@
 ---
 title: Editors Overview
 permalink: /editor/overview
+layout: default
 ---
 
 # Editors Overview
