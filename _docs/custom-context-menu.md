@@ -1,6 +1,7 @@
 ---
 title: Custom Context Menu
 permalink: /editor/custom-context-menu
+layout: default
 ---
 
 # Custom Context Menu
