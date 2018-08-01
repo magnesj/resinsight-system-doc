@@ -14,7 +14,6 @@ permalink: /editor/table
 
 ### Constructor
 
-```
-CAF_PDM_InitFieldNoDefault(&m_options, "Options", "Options", "", "", "");
-m_options.uiCapability()->setUiEditorTypeName(caf::PdmUiTableViewEditor::uiEditorTypeName());
-```
+    CAF_PDM_InitFieldNoDefault(&m_options, "Options", "Options", "", "", "");
+    m_options.uiCapability()->setUiEditorTypeName(caf::PdmUiTableViewEditor::uiEditorTypeName());
+
