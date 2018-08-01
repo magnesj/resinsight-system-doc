@@ -6,6 +6,7 @@ Themes are located at [https://github.com/pages-themes](https://github.com/pages
 
 [Introduction to layouts](https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-layouts/)
 
+
 ### items in docs folder
 <ul>
   {% for page in site.docs %}
