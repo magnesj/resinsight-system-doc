@@ -1,6 +1,7 @@
-## Welcome to GitHub Pages
+## ResInsight System Documentation
 
-You can use the [editor on GitHub](https://github.com/magnesj/resinsight-system-doc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[ResInsight System Documentation](https://magnesj.github.io/resinsight-system-doc)
+
 
 # items in docs folder
 <ul>
