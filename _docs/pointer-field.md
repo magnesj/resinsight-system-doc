@@ -1,5 +1,5 @@
 ---
-title: Pointer Field msj
+title: Pointer Field
 permalink: /pointer-field
 layout: default
 ---
