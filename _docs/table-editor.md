@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Table Editor
 permalink: /editor/table
 ---
