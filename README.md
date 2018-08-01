@@ -3,6 +3,7 @@
 Published at [https://magnesj.github.io/resinsight-system-doc](https://magnesj.github.io/resinsight-system-doc)
 
 Themes are located at [https://github.com/pages-themes](https://github.com/pages-themes)
+
 [Introduction to layouts](https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-layouts/)
 
 # items in docs folder
