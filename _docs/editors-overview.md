@@ -27,10 +27,10 @@ The default editors are defined at [PdmUiDefaultObjectEditor](https://github.com
 | PdmUiDateEditor | QDate
 | | QDateTime
 | |
-| PdmUiListEditor | std::vector<QString>
-| | std::vector<int>
-| | std::vector<unsigned int>
-| | std::vector<float>
+| PdmUiListEditor | `std::vector<QString>`
+| | `std::vector<int>`
+| | `std::vector<unsigned int>`
+| | `std::vector<float>`
 | |
 | PdmUiCheckBoxEditor | bool
 
