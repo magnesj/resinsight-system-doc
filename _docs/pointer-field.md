@@ -15,7 +15,7 @@ caf::PdmPtrField<RimWellPath*> m_parentWell;
 ### Constructor
     CAF_PDM_InitFieldNoDefault(&m_parentWell, "ParentWell", "Parent Well", "", "", "");
 
-```
+```cpp
 QList<caf::PdmOptionItemInfo> RimWellPathGeometryDef::calculateValueOptions(const caf::PdmFieldHandle* fieldNeedingOptions, 
                                                                              bool* useOptionsOnly)
 {
