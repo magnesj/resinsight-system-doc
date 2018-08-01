@@ -1,6 +1,6 @@
 ## ResInsight System Documentation
 
-[ResInsight System Documentation](https://magnesj.github.io/resinsight-system-doc)
+Published at [https://magnesj.github.io/resinsight-system-doc](https://magnesj.github.io/resinsight-system-doc)
 
 
 # items in docs folder
