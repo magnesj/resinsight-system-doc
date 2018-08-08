@@ -1,13 +1,7 @@
 ## ResInsight System Documentation
 
-Published at [https://magnesj.github.io/resinsight-system-doc](https://magnesj.github.io/resinsight-system-doc)
 
-Themes are located at [https://github.com/pages-themes](https://github.com/pages-themes)
-
-[Introduction to layouts](https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-layouts/)
-
-
-### items in docs folder
+### Documents
 <ul>
   {% for page in site.docs %}
     <li>
@@ -15,6 +9,20 @@ Themes are located at [https://github.com/pages-themes](https://github.com/pages
     </li>
   {% endfor %}
 </ul>
+
+
+## References
+Published at [https://magnesj.github.io/resinsight-system-doc](https://magnesj.github.io/resinsight-system-doc)
+
+Themes are located at [https://github.com/pages-themes](https://github.com/pages-themes)
+
+[Introduction to layouts](https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-layouts/)
+
+
+
+<!--- 
+
+Some test code to get access to different parts of a GitHub Pages site
 
 ### items in posts folder
 <ul>
@@ -44,3 +52,5 @@ Themes are located at [https://github.com/pages-themes](https://github.com/pages
 </ul>
 
 ...
+
+-->
