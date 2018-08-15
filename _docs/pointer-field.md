@@ -30,3 +30,17 @@ QList<caf::PdmOptionItemInfo> RimWellPathGeometryDef::calculateValueOptions(cons
 }
 ```
 
+## Find objects with PtrField referencing an object
+Sometimes objects pointing to an object needs to be updated. In order to find all objects pointing to object A, use the following template method : 
+
+```cpp
+std::vector<RimFlowCharacteristicsPlot*> objects;
+this->objectsWithReferringPtrFieldsOfType(objects);
+for (auto plot : objects)
+{
+    if (plot != nullptr)
+    {
+        plot->viewGeometryUpdated();
+    }
+}
+```
