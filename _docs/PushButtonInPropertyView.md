@@ -22,5 +22,8 @@
     
 # defineEditorAttribute
     
-    caf::PdmUiPushButtonEditorAttribute* pbAttribute = dynamic_cast<caf::PdmUiPushButtonEditorAttribute*> (attribute)
-    pbAttribute->m_buttonText = "Stop picking points";
+    if (field == &m_pickPointsEnabled)
+    {
+        caf::PdmUiPushButtonEditorAttribute* pbAttribute = dynamic_cast<caf::PdmUiPushButtonEditorAttribute*>(attribute);
+        if (pbAttribute) pbAttribute->m_buttonText = "Stop picking points";
+    }
