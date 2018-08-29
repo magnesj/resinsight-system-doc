@@ -21,6 +21,10 @@ layout: default
                                                            QMenu*                     menu,
                                                            QWidget*                   fieldEditorWidget)
     {
+        // Make sure selection manager is set up correctly
+	// ...
+	// then
+	
         caf::CmdFeatureMenuBuilder menuBuilder;
 
         menuBuilder << "RicMyFeature";
