@@ -22,13 +22,13 @@ layout: default
                                                            QWidget*                   fieldEditorWidget)
     {
         // Make sure selection manager is set up correctly
-	// ...
-	// then
+        // ...
+        // then
 	
         caf::CmdFeatureMenuBuilder menuBuilder;
 
         menuBuilder << "RicMyFeature";
-	    menuBuilder << "Separator";
+        menuBuilder << "Separator";
 
-    	menuBuilder.appendToMenu(menu);
-	}
+        menuBuilder.appendToMenu(menu);
+    }
