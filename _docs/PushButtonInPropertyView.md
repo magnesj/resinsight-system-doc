@@ -1,3 +1,9 @@
+---
+title: Push Button In Property View
+permalink: /editor/push-button-in-property-view
+layout: default
+---
+
 # Header file
     
     caf::PdmField< bool >   m_pickPointsEnabled;
