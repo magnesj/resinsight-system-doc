@@ -1,10 +1,10 @@
 ---
-title: Feature Command : User Interface
+title: Feature Command - User Interface
 permalink: /feature/user-interface
 layout: default
 ---
 
-## Feature Command : User Interface
+## Feature Command - User Interface
 
 Content of fields in feature command UI can be stored in a project file. This is usually done using the following code
 
