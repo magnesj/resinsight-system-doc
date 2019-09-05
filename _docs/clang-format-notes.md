@@ -4,7 +4,7 @@ permalink: /system/clang-format-notes
 layout: default
 ---
 
-# Clang Format Notes
+## Clang Format Notes
 
 These instructions will enable use of clang format 5 recursively on a folder on Windows using WSL(Windows Subsystem for Linux). The file system is by default shared with Windows.
 
@@ -17,8 +17,14 @@ sudo apt-get update
 sudo apt-get install -y clang-format-5.0
 ```
 
-3. Set working folder to the root folder for a recursive apply of clang format and execute
+3. Set working folder to the root folder to recursive apply clang-format. The default behaviour is to search upwards for a .clang-format configuration file.
+
 ```
 cd /mnt/d/..../...
 find  -iname *.h -o -iname *.cpp | xargs clang-format-5.0 -i
 ```
+
+## References
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+https://clang.llvm.org/docs/ClangFormat.html
