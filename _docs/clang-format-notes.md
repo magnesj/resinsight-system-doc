@@ -23,6 +23,7 @@ dir -recurse -include *.cpp,*.h | %{clang-format -i $_.FullName}
 
 ![Config of plugin to CS2017]({{site.baseurl}}/_docs/clang-format-config.png)
 
+![Config of plugin to CS2017](/assets/images/clang-format-config.png)
 
 ## NB obsolete!! Use from Windows SubSystem for Linux
 These instructions will enable use of clang format 5 recursively on a folder on Windows using WSL(Windows Subsystem for Linux). The file system is by default shared with Windows.
