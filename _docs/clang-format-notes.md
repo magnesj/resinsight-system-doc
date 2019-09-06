@@ -19,6 +19,9 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcp
 dir -recurse -include *.cpp,*.h | %{clang-format -i $_.FullName}
 ```
 
+3. Install the following extension https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat
+4. 
+
 ## NB obsolete!! Use from Windows SubSystem for Linux
 These instructions will enable use of clang format 5 recursively on a folder on Windows using WSL(Windows Subsystem for Linux). The file system is by default shared with Windows.
 
