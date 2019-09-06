@@ -20,6 +20,7 @@ dir -recurse -include *.cpp,*.h | %{clang-format -i $_.FullName}
 ```
 
 3. Install the following extension https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat
+
 ![Config of plugin to CS2017](clang-format-config.png)
 
 
