@@ -4,8 +4,22 @@ permalink: /system/clang-format-notes
 layout: default
 ---
 
-## Clang Format Notes
+# Clang Format Notes
 
+## clang-format with PowerShell
+The intention is to activate use the integrated VS2017 clang-format on save. The currently shipped version of clang-format in VS2017 is clang-format 6.0.0.
+
+1. Add clang-format to path
+```
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcpackages\clang-format.exe
+```
+
+2. Script to apply clang-format on header/cpp files in a folder recursively
+```
+dir -recurse -include *.cpp,*.h | %{clang-format -i $_.FullName}
+```
+
+## NB obsolete!! Use from Windows SubSystem for Linux
 These instructions will enable use of clang format 5 recursively on a folder on Windows using WSL(Windows Subsystem for Linux). The file system is by default shared with Windows.
 
 1. Activate Windows Subsystem for Linux, use Ubuntu 16.04, https://docs.microsoft.com/en-us/windows/wsl/install-win10
