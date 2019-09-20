@@ -15,3 +15,8 @@ Use the tools `yapf` and `pylint` to achieve this.
 
 ## Running yapf:
 `python -m yapf --style pep8 -i Case.py`
+
+## Automatically execute pylint with pep8
+https://pypi.org/project/autopep8/#installation
+
+`python -m autopep8 --in-place .\Properties.py`
