@@ -34,7 +34,7 @@ layout: default
     }
 
 ## Context Menu in 3D views
-When a command is supposed to be available in the 3D view in addition to right-clicking on objects in the Property editor, the follwoing pattern can be used. This allows the use of a feature from both Property Editor and 3D views at the same time.
+When a command is supposed to be available in the 3D view in addition to right-clicking on objects in the **Property Editor**, the following pattern can be used. This allows the use of a feature from both **Property Editor** and 3D views at the same time. Usually, the current context widget should be investigated first before checking the currently selected object.
 
 - Before the construction of items to be used in a menu, set the current context menu widget
 - Add menu items and show the menu
