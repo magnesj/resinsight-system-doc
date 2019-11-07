@@ -11,7 +11,7 @@ The intention is to activate use the integrated VS2017 clang-format on save. The
 ## Install Format document on Save
 
 1. Install plugin
-https://marketplace.visualstudio.com/items?itemName=mynkow.FormatdocumentonSave
+[Format document on Save](https://marketplace.visualstudio.com/items?itemName=mynkow.FormatdocumentonSave)
 
 2. Example of configuration
 ![Config of plugin to VS2017]({{site.baseurl}}/assets/images/format-on-save-plugin.png )
@@ -30,14 +30,19 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcp
 dir -recurse -include *.cpp,*.h | %{clang-format -i $_.FullName}
 ```
 
+## References
+https://clang.llvm.org/docs/ClangFormat.html
+
 
 
 # Obsolete 
 
-## The following extension will miss some single space formatting in some cases - DO NOT USE
+### The following extension will miss some single space formatting in some cases - DO NOT USE
+
 https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat
 
-## NB obsolete!! Use from Windows SubSystem for Linux
+### NB obsolete!! Use from Windows SubSystem for Linux
+
 These instructions will enable use of clang format 5 recursively on a folder on Windows using WSL(Windows Subsystem for Linux). The file system is by default shared with Windows.
 
 1. Activate Windows Subsystem for Linux, use Ubuntu 16.04, https://docs.microsoft.com/en-us/windows/wsl/install-win10
