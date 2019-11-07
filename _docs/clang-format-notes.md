@@ -17,9 +17,7 @@ The intention is to activate use the integrated VS2017 clang-format on save. The
 ![Config of plugin VS2017]({{site.baseurl}}/assets/images/format-on-save-plugin.png )
 
 3. Enable use of clang-format in VS2017
-
 Make sure "Enable ClangFormat support" is checked 
-
 ![Config of clang-format VS2017]({{site.baseurl}}/assets/images/enable-clang-format-vs2017.png)
 
 
