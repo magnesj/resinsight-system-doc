@@ -6,10 +6,21 @@ layout: default
 
 # Clang Format Notes
 
-## clang-format with PowerShell
 The intention is to activate use the integrated VS2017 clang-format on save. The currently shipped version of clang-format in VS2017 is clang-format 6.0.0.
 
-1. Add clang-format to path
+## Install Format document on Save
+
+1. Install plugin
+https://marketplace.visualstudio.com/items?itemName=mynkow.FormatdocumentonSave
+
+2. Example of configuration
+![Config of plugin to VS2017]({{site.baseurl}}/assets/images/format-on-save-plugin.png )
+
+## Use with PowerShell
+If you need to do apply clang format on all files, it is useful to use PowerShell
+
+1. Add clang-format to path. Use the same executable as shipped with VS2017 installation
+
 ```
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcpackages\clang-format.exe
 ```
@@ -19,9 +30,12 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcp
 dir -recurse -include *.cpp,*.h | %{clang-format -i $_.FullName}
 ```
 
-3. Install the following extension https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat
 
-![Config of plugin to CS2017]({{site.baseurl}}/assets/images/clang-format-config.png)
+
+# Obsolete 
+
+## The following extension will miss some single space formatting in some cases - DO NOT USE
+https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat
 
 ## NB obsolete!! Use from Windows SubSystem for Linux
 These instructions will enable use of clang format 5 recursively on a folder on Windows using WSL(Windows Subsystem for Linux). The file system is by default shared with Windows.
