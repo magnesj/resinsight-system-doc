@@ -11,14 +11,9 @@ The intention is to activate use the integrated VS2017 clang-format on save. The
 ## Install Format document on Save
 
 1. Install plugin
-[Format document on Save](https://marketplace.visualstudio.com/items?itemName=mynkow.FormatdocumentonSave)
+[Clang Power Tools Pluging](https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools)
 
-2. Example of configuration of plugin
-![Config of plugin VS2017]({{site.baseurl}}/assets/images/format-on-save-plugin.png )
-
-3. Enable use of clang-format in VS2017
-Make sure "Enable ClangFormat support" is checked 
-![Config of clang-format VS2017]({{site.baseurl}}/assets/images/enable-clang-format-vs2017.png)
+2. Configure use of clang-format shipped with VS2017
 
 
 ## Use with PowerShell
