@@ -28,7 +28,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcp
 
 2. Script to apply clang-format on header/cpp files in a folder recursively
 ```
-dir -recurse -include *.cpp,*.h | %{clang-format -i $_.FullName}
+dir -recurse -include *.cpp,*.h,*.inl | %{clang-format -i $_.FullName}
 ```
 
 ## References
