@@ -8,7 +8,7 @@ layout: default
 
 The intention is to activate use the integrated VS2017 clang-format on save. The currently shipped version of clang-format in VS2017 is clang-format 6.0.0.
 
-## Install Format document on Save
+## Install Clang Power Tools
 
 1. Install plugin
 [Clang Power Tools Plugin](https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools)
