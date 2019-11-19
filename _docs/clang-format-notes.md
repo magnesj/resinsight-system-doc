@@ -11,7 +11,7 @@ The intention is to activate use the integrated VS2017 clang-format on save. The
 ## Install Format document on Save
 
 1. Install plugin
-[Clang Power Tools Pluging](https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools)
+[Clang Power Tools Plugin](https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools)
 
 2. Configure use of clang-format shipped with VS2017
 ![Config of Clang Power Tools VS2017]({{site.baseurl}}/assets/images/clang-power-tools.png)
