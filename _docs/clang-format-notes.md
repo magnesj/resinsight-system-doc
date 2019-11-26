@@ -26,7 +26,8 @@ If you need to do apply clang format on all files, it is useful to use PowerShel
 $env:Path += ";C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcpackages\"
 ```
 
-2. Command to apply clang-format on header/cpp files in a folder recursively. **Start in ResInsight/ApplicationCode**
+2. Powershell syntax command to apply clang-format on header/cpp files in a folder recursively. **Start in ResInsight/ApplicationCode**
+
 ```
 dir -recurse -include *.cpp,*.h,*.inl | %{clang-format -fallback-style=none -i $_.FullName}
 ```
