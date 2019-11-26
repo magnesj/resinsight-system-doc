@@ -23,12 +23,12 @@ If you need to do apply clang format on all files, it is useful to use PowerShel
 1. Add clang-format to path. Use the same executable as shipped with VS2017 installation
 
 ```
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcpackages\clang-format.exe
+$env:Path += ";C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcpackages\"
 ```
 
-2. Script to apply clang-format on header/cpp files in a folder recursively
+2. Command to apply clang-format on header/cpp files in a folder recursively. **Start in ResInsight/ApplicationCode**
 ```
-dir -recurse -include *.cpp,*.h,*.inl | %{clang-format -i $_.FullName}
+dir -recurse -include *.cpp,*.h,*.inl | %{clang-format -fallback-style=none -i $_.FullName}
 ```
 
 ## References
