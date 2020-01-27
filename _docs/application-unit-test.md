@@ -20,4 +20,4 @@ If you want to execute a subset of tests, add the following to `RiaApplication::
 
  `::testing::GTEST_FLAG( filter ) = "RigReservoirTest.BasicTest*";`
  
- https://stackoverflow.com/questions/12076072/how-to-run-specific-test-cases-in-googletest
+ [More info](https://stackoverflow.com/questions/12076072/how-to-run-specific-test-cases-in-googletest)
