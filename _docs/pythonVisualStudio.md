@@ -10,6 +10,6 @@ Python code is generated from proto files, and is exported into `\gitroot\ResIns
 To be able to use Python from a debug version of ResInsight, the generated Python code must be added to the environment variable PYTHONPATH
 
 This can be done by modifying the properties for ResInsight
-
+![Python Visual Studio]({{site.baseurl}}/assets/images/python_environment_settings.png)
 
 `PYTHONPATH=d:\gitroot\ResInsight\ApplicationCode\GrpcInterface\Python;$PYTHONPATH`
