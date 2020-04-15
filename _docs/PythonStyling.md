@@ -6,20 +6,15 @@ layout: default
 
 
 Should follow PEP 8: https://www.python.org/dev/peps/pep-0008/
+## Installation of tools
+`pip install autopep8`
 
-Use the tools `yapf` and `pylint` to achieve this.
+## Configuration
+File located at top of repository named `setup.cfg`
 
-## Installing yapf:
-`pip install yapf`
-
-## Installing pylint
-`pip install pylint`
-
-## Running pylint:
-`python -m pylint Case.py`
-
-## Running yapf:
-`python -m yapf --style pep8 -i Case.py`
+## Procedure
+In folder ResInsight\ApplicationCode\GrpcInterface\Python\rips execute the following
+`python -m autopep8 --in-place --recursive .`
 
 ## Automatically execute pylint with pep8
 https://pypi.org/project/autopep8/#installation
