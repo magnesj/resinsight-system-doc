@@ -14,6 +14,7 @@ File located at top of repository named `setup.cfg`
 
 ## Procedure
 In folder ResInsight\ApplicationCode\GrpcInterface\Python\rips execute the following
+
 `python -m autopep8 --in-place --recursive .`
 
 ## Automatically execute pylint with pep8
