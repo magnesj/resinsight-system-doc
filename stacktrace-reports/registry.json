@@ -14010,8 +14010,17 @@
     "c7b4bbe275e4": {
       "last_updated": "2026-09-12",
       "notes": "",
-      "opm_issue": null,
-      "pr": null,
+      "opm_issue": {
+        "number": 14739,
+        "state": "OPEN",
+        "url": "https://github.com/OPM/ResInsight/issues/14739"
+      },
+      "pr": {
+        "branch": "fix-14739-intersection-part-mgr-null",
+        "number": 14740,
+        "state": "OPEN",
+        "url": "https://github.com/OPM/ResInsight/pull/14740"
+      },
       "representative_stack": [
         "[0] performCrashLogging at ResInsight/ApplicationExeCode/RiaMainTools.cpp:178",
         "[1] manageSegFailureSA(int, siginfo_t*, void*) at ResInsight/ApplicationExeCode/RiaMainTools.cpp:310",
@@ -14045,7 +14054,7 @@
         "RiuSelectionChangedHandler::updateResultInfo"
       ],
       "signature_id": "c7b4bbe275e4",
-      "status": "new",
+      "status": "pr-open",
       "top_frame": "std::vector<std::vector<cvf::Vector3<double>, std::allocator<cvf::Vector3<double> > >, std::allocator<std::vector<cvf::Vector3<double>, std::allocator<cvf::Vector3<double> > > > >::size",
       "weeks": {
         "2026-09-11": {
