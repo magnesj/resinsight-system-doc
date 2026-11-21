@@ -2369,7 +2369,6 @@
         "2026.09.1": false,
         "2026.11.1": true
       },
-      "fixed_in": "2026.09.1-dev.01",
       "last_updated": "2026-11-21",
       "notes": "Same root cause and fix as f4394a37498f (RimNameConfig::autoName null holder deref).",
       "opm_issue": {
@@ -2378,10 +2377,10 @@
         "url": "https://github.com/OPM/ResInsight/issues/14699"
       },
       "pr": {
-        "branch": "fix-14699-name-config-null-holder",
-        "number": 14700,
-        "state": "MERGED",
-        "url": "https://github.com/OPM/ResInsight/pull/14700"
+        "branch": "crash-triage-2026-11-21",
+        "number": 15233,
+        "state": "OPEN",
+        "url": "https://github.com/OPM/ResInsight/pull/15233"
       },
       "representative_stack": [
         "[0] performCrashLogging at ResInsight/ApplicationExeCode/RiaMainTools.cpp:178",
@@ -2438,7 +2437,7 @@
         "RiaOptionItemFactory::appendOptionItemFromViewNameAndCaseName"
       ],
       "signature_id": "12f26117f677",
-      "status": "resolved",
+      "status": "pr-open",
       "top_frame": "manageTerminate",
       "weeks": {
         "2026-09-04": {
@@ -5708,7 +5707,7 @@
       },
       "fixed_in": "2026.06.0-RC_2",
       "last_updated": "2026-11-21",
-      "notes": "",
+      "notes": "Crash at RiuPlotMainWindow::customMenuRequested (2026.11.1). Findings: abort() inside QRhi::endFrame <- QPlatformBackingStore::rhiFlush <- QWidgetRepaintManager::flush, running in the nested event loop of QMenu::exec; customMenuRequested is only a caller frame. Earlier fix (01ce94d5, #14174) is unrelated to this path. Uncertain because this looks like a Qt RHI/graphics driver abort, not a ResInsight defect.",
       "opm_issue": {
         "number": 14174,
         "state": "CLOSED",
@@ -5729,7 +5728,7 @@
         "RiuPlotMainWindow::customMenuRequested"
       ],
       "signature_id": "2b80f5a0a843",
-      "status": "resolved",
+      "status": "no-fix-found",
       "top_frame": "RiuPlotMainWindow::customMenuRequested",
       "weeks": {
         "2026-05-29": {
@@ -21990,7 +21989,7 @@
     },
     "cd35d3fa6bc1": {
       "last_updated": "2026-11-21",
-      "notes": "",
+      "notes": "Crash at RiuRelativePermeabilityPlotPanel::contextMenuEvent (1 report). Findings: abort() inside QRhi::endFrame during the QMenu::exec nested event loop (menu.exec at RiuRelativePermeabilityPlotPanel.cpp:956); the surrounding code is correct. Uncertain because this looks like a Qt RHI/graphics driver abort, not a ResInsight defect.",
       "opm_issue": null,
       "pr": null,
       "representative_stack": [
@@ -22007,7 +22006,7 @@
         "RiuRelativePermeabilityPlotPanel::contextMenuEvent"
       ],
       "signature_id": "cd35d3fa6bc1",
-      "status": "new",
+      "status": "no-fix-found",
       "top_frame": "RiuRelativePermeabilityPlotPanel::contextMenuEvent",
       "weeks": {
         "2026-11-20": {
@@ -24220,7 +24219,12 @@
       "no_autolink": true,
       "notes": "Auto-link to #14140 removed: the symbol is only a caller frame in that issue's different crash (RifEclipseOutputFileTools::keywordData).",
       "opm_issue": null,
-      "pr": null,
+      "pr": {
+        "branch": "crash-triage-2026-11-21",
+        "number": 15233,
+        "state": "OPEN",
+        "url": "https://github.com/OPM/ResInsight/pull/15233"
+      },
       "representative_stack": [
         "[0] performCrashLogging at ResInsight/ApplicationExeCode/RiaMainTools.cpp:259",
         "[1] manageSegFailureSA(int, siginfo_t*, void*) at ResInsight/ApplicationExeCode/RiaMainTools.cpp:400",
@@ -24234,7 +24238,7 @@
         "caf::PdmUiTreeSelectionQModel::setData"
       ],
       "signature_id": "e91fcf778c07",
-      "status": "new",
+      "status": "pr-open",
       "top_frame": "caf::PdmUiTreeSelectionQModel::setData",
       "weeks": {
         "2026-11-20": {
@@ -25745,7 +25749,7 @@
     },
     "f5744058c34d": {
       "last_updated": "2026-11-21",
-      "notes": "",
+      "notes": "Crash at ecl_kw_get_data_type <- ECLInitFileData::keywordData<int> <- saturationRegion (SATNUM lookup) <- RigFlowDiagSolverInterface::calculateRelPermCurves. Findings: keywordData asserts kw != nullptr after ecl_file_view_iget_named_kw, compiled out in release, so a null kw is dereferenced (same pattern in ECLRestartData::keywordData). Code is in the opm-flowdiagnostics-applications submodule, so a fix (throw std::invalid_argument, already caught in calculateRelPermCurves) needs a separate upstream PR. Uncertain because the reason the keyword is missing is unproven (file changed on disk?).",
       "opm_issue": null,
       "pr": null,
       "representative_stack": [
@@ -25772,7 +25776,7 @@
         "RiuRelativePermeabilityPlotPanel::showEvent"
       ],
       "signature_id": "f5744058c34d",
-      "status": "new",
+      "status": "no-fix-found",
       "top_frame": "RigFlowDiagSolverInterface::calculateRelPermCurves",
       "weeks": {
         "2026-11-20": {
