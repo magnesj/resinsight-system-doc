@@ -25749,7 +25749,7 @@
     },
     "f5744058c34d": {
       "last_updated": "2026-11-21",
-      "notes": "Crash at ecl_kw_get_data_type <- ECLInitFileData::keywordData<int> <- saturationRegion (SATNUM lookup) <- RigFlowDiagSolverInterface::calculateRelPermCurves. Findings: keywordData asserts kw != nullptr after ecl_file_view_iget_named_kw, compiled out in release, so a null kw is dereferenced (same pattern in ECLRestartData::keywordData). Code is in the opm-flowdiagnostics-applications submodule, so a fix (throw std::invalid_argument, already caught in calculateRelPermCurves) needs a separate upstream PR. Uncertain because the reason the keyword is missing is unproven (file changed on disk?).",
+      "notes": "Crash at ecl_kw_get_data_type <- ECLInitFileData::keywordData<int> <- saturationRegion <- RigFlowDiagSolverInterface::calculateRelPermCurves. keywordData asserted kw != nullptr (compiled out in release). Fix pushed as CeetronSolutions/opm-flowdiagnostics-applications#2 (throw std::invalid_argument, caught in calculateRelPermCurves); ResInsight submodule pointer to be bumped after merge. Cause of the missing keyword unproven.",
       "opm_issue": null,
       "pr": null,
       "representative_stack": [
